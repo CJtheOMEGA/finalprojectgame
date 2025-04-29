@@ -2,4 +2,40 @@
 
 * {
 	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 1rem;
+	background-color: rgb(255, 255, 255);
+	background: url(../img/paper.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: rgb(0, 0, 0);
+	font-size: 3rem;
+	font-family: Lacquer;
+	overflow: hidden;
+}
+.grid-container{ 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 2rem;
+	margin: 15% 4rem 0 4rem;
+}
+.last{
+	padding-bottom: 2rem;
+	border-bottom: 2px solid rgb(220, 200, 180);
+}
+
+body {
+	transition-property: transform;
+	transition-duration: 3s;
+}
+.offset-left {
+	margin-left: 1rem;
 }
