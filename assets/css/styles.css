@@ -1,13 +1,32 @@
 /* styles.css */
 
 * {
-	font-family: Arial;
+	font-family: Comic Relief;
 	margin: 0;
 	padding: 0;
 }
 html{
 	width: 100%;
 	height: 100%;
+
+.kaushan-script-regular {
+	font-family: "Kaushan Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	  }
+
+.comic-relief-regular {
+	font-family: "Comic Relief", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	  }
+	  
+.comic-relief-bold {
+	font-family: "Comic Relief", system-ui;
+	font-weight: 700;
+	font-style: normal;
+	  }
+	  
 }
 body{
 	margin: 1rem;
@@ -18,7 +37,7 @@ body{
 	background-size: cover;
 	color: rgb(0, 0, 0);
 	font-size: 3rem;
-	font-family: Lacquer;
+	font-family: Comic Relief;
 	overflow: hidden;
 }
 .grid-container{ 
@@ -39,3 +58,126 @@ body {
 .offset-left {
 	margin-left: 1rem;
 }
+
+.game {
+	width: 600px;
+	height: 200px;
+	border: 1px solid black;
+	margin: auto;
+  }
+  
+  #Robber1 {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/Robber1.png);
+	background-size: 50px 50px;
+	position: relative;
+	top: 150px;
+  }
+  
+  #Robber2 {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/Robber2.png);
+	background-size: 50px 50px;
+	position: relative;
+	top: 150px;
+  }
+
+  #Cop {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/Cop.png);
+	background-size: 50px 50px;
+	position: relative;
+	top: 150px;
+  }
+
+  .jump {
+	animation: jump 0.3s linear;
+  }
+  
+  @keyframes jump {
+	0% {
+	  top: 150px;
+	}
+  
+	30% {
+	  top: 130px;
+	}
+  
+	50% {
+	  top: 80px;
+	}
+  
+	80% {
+	  top: 130px;
+	}
+  
+	100% {
+	  top: 150px;
+	}
+  }
+  
+  #Fence {
+	width: 20px;
+	height: 40px;
+	position: relative;
+	top: 110px;
+	left: 580px;
+  
+	background-image: url("../img/Fence.png");
+	background-size: 20px 40px;
+  
+	animation: block 1s infinite linear;
+  }
+
+  #Trash {
+	width: 20px;
+	height: 40px;
+	position: relative;
+	top: 110px;
+	left: 580px;
+  
+	background-image: url("../img/Trash.png");
+	background-size: 20px 40px;
+  
+	animation: block 1s infinite linear;
+  }
+  
+  #Spike {
+	width: 20px;
+	height: 40px;
+	position: relative;
+	top: 110px;
+	left: 580px;
+  
+	background-image: url("../img/Spikes.png");
+	background-size: 20px 40px;
+  
+	animation: block 1s infinite linear;
+  }
+  
+  #Spike2 {
+	width: 20px;
+	height: 40px;
+	position: relative;
+	top: 110px;
+	left: 580px;
+  
+	background-image: url("../img/Spikes2.png");
+	background-size: 20px 40px;
+  
+	animation: block 1s infinite linear;
+  }
+  
+  
+  @keyframes block {
+	0% {
+	  left: 580px;
+	}
+  
+	100% {
+	  left: -20px;
+	}
+  }
